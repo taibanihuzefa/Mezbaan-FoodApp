@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Dashboard"
+        android:title="Dashboard"
+        android:textColor="@color/orange"/>
+
+    <item
+        android:id="@+id/userprofile"
+        android:title="User Profile"
+        />
+    <item
+        android:id="@+id/fooditem"
+        android:title="Food Item"
+        />
+    <item
+        android:id="@+id/foodcategory"
+        android:title="Food Category"
+        />
+    <item
+        android:id="@+id/customer"
+        android:title="Customers"
+        />
+    <item
+        android:id="@+id/Report"
+        android:title="Reports"
+        />
+    <item
+        android:id="@+id/Setting"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/placeorder"
+        android:title="Place Order"/>
+
+    <item
+        android:id="@+id/Logout"
+        android:title="Logout"/>
+
+
+</menu>

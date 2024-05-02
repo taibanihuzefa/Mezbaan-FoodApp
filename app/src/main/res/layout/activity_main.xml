@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/lavbodycolor">
+
+    <ImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="338dp"
+        android:layout_height="371dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/main_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Signinbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/Abtncolor"
+            android:onClick="btnsignin"
+            android:padding="15dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/Signupbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/Abtncolor"
+            android:padding="15dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="btnsignup"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mainImage2"
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/main_image2"
+            tools:ignore="ContentDescription,RtlHardcoded,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/main_image"
+            android:contentDescription="@string/todo"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

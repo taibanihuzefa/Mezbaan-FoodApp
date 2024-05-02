@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="Notifications Settings">
+
+
+        <CheckBoxPreference
+            android:key="amount_receive_alert"
+            android:title="Enable Amount Receive Alert"
+            android:summary="Whenever the amount you recieve it gives an aleart"
+            android:defaultValue="true"/>
+
+        <RingtonePreference
+            android:key="ringtone"
+            android:title="Ringtone"
+            android:summary="Choose a ringtone"
+            android:ringtoneType="notification"/>
+
+        <SeekBarPreference
+            android:key="ring_volume"
+            android:title="Ring Volume"
+            android:max="100"
+            android:defaultValue="70"
+            />
+
+        <SwitchPreference
+            android:key="sms_enabled"
+            android:title="Enable SMS Sending"
+            android:summary="Enable or disable sending work progress via SMS" />
+        <ListPreference
+            android:title="App language"
+            android:summary="Select app local language"
+            android:dialogTitle="Select language"
+            android:entries="@array/pref_remind_me_to_take_a_break"
+            android:entryValues="@array/pref_duration"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

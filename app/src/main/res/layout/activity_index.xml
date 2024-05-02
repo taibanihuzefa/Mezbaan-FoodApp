@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Index"
+    android:orientation="vertical"
+    android:background="@color/Abgcolor"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/HeadingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+
+        />
+
+<!--    <SearchView-->
+<!--        android:id="@+id/searchIcon"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/HeadingTxt"-->
+<!--        android:queryHint="Search Here"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        />-->
+
+
+    <ImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="310dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/HeadingTxt"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/mainlogo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:onClick="FoodItemCategory">
+
+        <ImageView
+            android:id="@+id/btnFoodItemCategory"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/fooditemcategory" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:text="FOOD ITEM CATEGORY"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:paddingBottom="0px"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+<!--=========================================== =====================-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:layout_below="@+id/mainlogo"
+        android:layout_toLeftOf="@+id/card1"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="0dp"
+        tools:ignore="NotSibling"
+        android:onClick="Profile">
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/man2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--=========================================== =====================-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/card1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:onClick="PlaceOrder">
+
+        <ImageView
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/order_now" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="PLACE ORDER"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!--=========================================== =====================-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:layout_below="@+id/card2"
+        android:layout_toLeftOf="@+id/card3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="0dp"
+        tools:ignore="NotSibling"
+        android:onClick="FoodItem">
+
+        <ImageView
+            android:id="@+id/btnFoodItem"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/burger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="FOOD ITEM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--=========================================== =====================-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/card3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:onClick="Reports">
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="REPORTS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!--=========================================== =====================-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Abtncolor"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="15px"
+        android:layout_below="@+id/card4"
+        android:layout_toLeftOf="@+id/card5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="0dp"
+        tools:ignore="NotSibling"
+        android:onClick="ViewCustomers">
+
+        <ImageView
+            android:id="@+id/btn4"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="10dp"
+            android:src="@drawable/customer2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="CUSTOMERS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--=========================================== =====================-->
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnProfile"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="Profile"-->
+<!--        android:textSize="17sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_below="@+id/card4"-->
+<!--        android:layout_toLeftOf="@+id/btnFoodItemCategory"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:onClick="Profile"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnFoodItemCategory"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="Food Item Category"-->
+<!--        android:textSize="17sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_below="@+id/card2"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="42dp"-->
+<!--        android:onClick="FoodItemCategory"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnFoodItem"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="Food Item"-->
+<!--        android:textSize="17sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_below="@+id/btnProfile"-->
+<!--        android:layout_toLeftOf="@+id/btnPlaceOrder"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:onClick="FoodItem"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPlaceOrder"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="Place Order"-->
+<!--        android:textSize="17sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_below="@+id/btnFoodItemCategory"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="42dp"-->
+<!--        android:onClick="PlaceOrder"-->
+
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnViewCustomers"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="View Customers"-->
+<!--        android:textSize="16sp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_below="@+id/btnFoodItem"-->
+<!--        android:layout_toLeftOf="@+id/btnPlaceOrder"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:onClick="ViewCustomers"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnReports"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:text="Reports"-->
+<!--        android:textSize="17sp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="@color/Abtncolor"-->
+<!--        android:layout_below="@+id/btnPlaceOrder"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="42dp"-->
+<!--        android:onClick="Reports"-->
+<!--        />-->
+
+
+
+
+</RelativeLayout>

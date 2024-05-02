@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_food_name"
+        android:title="Burger"/>
+
+
+
+    <item
+        android:id="@+id/menu_category"
+        android:title="Fast Food"/>
+    <item
+        android:id="@+id/menu_price"
+        android:title="100/-"/>
+    <item
+        android:id="@+id/menu_description"
+        android:title="None"/>
+
+</menu>
